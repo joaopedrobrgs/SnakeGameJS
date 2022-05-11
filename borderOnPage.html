@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            display: flex;
+        }
+
+        #stage{
+            margin-right: 50px;
+            border: 20px solid gray;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <canvas id="stage" height="500px" width="500px"></canvas>
+
+    <div id="configuration">
+        <div id="gameVelocity">
+            <h4>Velocidade do jogo:</h4>
+            <p>(Alterar a velocidade do jogo faz com que ele reinicie)</p>
+            <button id="slowest">Muito lenta</button>
+            <button id="slow">Lenta</button>
+            <button id="normal">Normal (padrão)</button>
+            <button id="fast">Rápida</button>
+            <button id="fastest">Muito rápida</button>
+        </div>
+
+        <div id="border">
+            <h4>Borda:</h4>
+            <a href="./index.html"><button>Desligada (padrão)</button></a>
+            <button>Ligada</button>
+        </div>
+
+        <div id="pontuation">
+            <h4>Pontuação atual:</h4>
+            <p id="actualPontuation">0</p>
+            <h4>Recorde:</h4>
+            <p id="maxPontuation">0</p>
+        </div>
+    </div>
+
+    <script id="js" src="./borderOn.js"></script>
+
+</body>
+
+</html>
